@@ -3,14 +3,26 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { MatTableModule } from '@angular/material/table';
+import { DatatableComponent } from './tablas/datatable/datatable.component';
+
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    DatatableComponent,
+
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatProgressBarModule,
+    MatTableModule,
+   
+    
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
